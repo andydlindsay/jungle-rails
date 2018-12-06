@@ -1,6 +1,5 @@
-<tr>
-  <td>
-    <%= category.name %>
-  </td>
-</tr>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  <%= category.name %>
+  <span class="badge badge-primary badge-pill"><%= category.products.count %></span>
+</li>
 
