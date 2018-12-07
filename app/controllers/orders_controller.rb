@@ -64,6 +64,7 @@ class OrdersController < ApplicationController
       )
     end
     order.save!
+    UserMailer.order_confirmation(order: order, cart: enhanced_cart).deliver_now
     order
   end
 
