@@ -2,6 +2,17 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @products = []
+    @order.line_items.each do |line_item|
+      product_info = Product.find(line_item.product_id)
+      product_data = {
+        "ordered_quantity" => line_item.quantity,
+        "price_paid_cents" => line_item.item_price_cents,
+        "total_price_paid_cents" => line_item.total_price_cents,
+        "product_info" => product_info
+      }
+      @products.push product_data
+    end
   end
 
   def create
