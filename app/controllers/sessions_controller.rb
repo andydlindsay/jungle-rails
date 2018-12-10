@@ -4,8 +4,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by_email(params[:anything][:email])
-    if user && user.authenticate(params[:anything][:password])
+    # user = User.find_by_email(params[:anything][:email])
+    # if user && user.authenticate(params[:anything][:password])
+    #   session[:user_id] = user.id
+    #   redirect_to '/'
+    # else
+    #   render :new
+    # end
+    if user = User.authenticate_with_credentials(params[:anything][:email], params[:anything][:password])
       session[:user_id] = user.id
       redirect_to '/'
     else
