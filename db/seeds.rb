@@ -43,6 +43,18 @@ cat1.products.create!({
   price: 64.99
 })
 
+product1 = cat1.products.first
+product1.reviews.create!({
+  user_id: 1,
+  description: 'I really love this shirt',
+  rating: 4
+})
+product1.reviews.create!({
+  user_id: 2,
+  description: 'It\'s okay. Not great.',
+  rating: 2
+})
+
 cat1.products.create!({
   name:  'Women\'s Zebra pants',
   description: Faker::Hipster.paragraph(4),
