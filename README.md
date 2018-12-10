@@ -4,7 +4,19 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
+![products index](https://github.com/andydlindsay/jungle-rails/blob/master/docs/products%20index.png)
 
+![products show](https://github.com/andydlindsay/jungle-rails/blob/master/docs/products%20show.png)
+
+![cart](https://github.com/andydlindsay/jungle-rails/blob/master/docs/cart.png)
+
+![order confirmation](https://github.com/andydlindsay/jungle-rails/blob/master/docs/order%20confirmation.png)
+
+![admin categories](https://github.com/andydlindsay/jungle-rails/blob/master/docs/admin%20categories.png)
+
+![admin products](https://github.com/andydlindsay/jungle-rails/blob/master/docs/admin%20products.png)
+
+![admin new product](https://github.com/andydlindsay/jungle-rails/blob/master/docs/admin%20new%20product.png)
 
 ## Setup
 
